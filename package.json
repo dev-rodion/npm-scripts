@@ -1,0 +1,20 @@
+{
+  "name": "npm-scripts",
+  "version": "1.0.0",
+  "description": "Learning NPM Scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-rodion/npm-scripts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-rodion/npm-scripts/issues"
+  },
+  "homepage": "https://github.com/dev-rodion/npm-scripts#readme"
+}
