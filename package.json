@@ -4,7 +4,8 @@
   "description": "Learning NPM Scripts",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o src/css/ src/scss/"
+    "scss": "node-sass --output-style compressed -o src/css/ src/scss/",
+    "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* "
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/dev-rodion/npm-scripts#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "autoprefixer": "^10.4.0",
+    "node-sass": "^6.0.1",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2"
   }
 }

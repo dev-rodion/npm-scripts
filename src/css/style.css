@@ -1,0 +1,10 @@
+
+::-moz-placeholder {
+  font-family: sans-serif;
+}
+:-ms-input-placeholder {
+  font-family: sans-serif;
+}
+::placeholder {
+  font-family: sans-serif;
+}
