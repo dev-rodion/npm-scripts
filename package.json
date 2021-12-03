@@ -8,7 +8,8 @@
     "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* ",
     "lint-scss": "stylelint src/scss/*.scss",
     "lint-js": "eslint --fix src/js/",
-    "uglify": "uglifyjs src/js/script.js -m -o src/js/script.min.js"
+    "uglify": "uglifyjs src/js/script.js -m -o src/js/script.min.js",
+    "imagemin": "imagemin src/images/* -o dist/images/ && imagemin src/images/jpg/* -o dist/images/jpg/ && imagemin src/images/png/* -o dist/images/png/ && imagemin src/images/svg/* -o dist/images/jpg/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/dev-rodion/npm-scripts#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "imagemin-cli": "^7.0.0",
     "eslint": "^8.3.0",
     "node-sass": "^6.0.1",
     "postcss": "^8.4.4",

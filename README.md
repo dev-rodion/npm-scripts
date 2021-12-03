@@ -23,4 +23,8 @@ Rules docs: https://eslint.org/docs/rules/
 
 ### npm run uglify
 Minifies, compresses and improves src/js/script.js <br />
-Using the uglify plugin. Command Line docs: https://github.com/mishoo/UglifyJS#command-line-options
+Using the uglifyjs plugin. Command Line docs: https://github.com/mishoo/UglifyJS#command-line-options
+
+### npm run imagemin
+Optimizes images from src/images/ folder and sends them to dist/images/ folder.
+Using the imagemin plugin. Command Line docs: https://github.com/imagemin/imagemin-cli#readme
