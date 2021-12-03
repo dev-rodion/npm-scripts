@@ -14,3 +14,9 @@ Using the postcss, postcss-cli and autoprefixer plugins. Command Line docs: http
 Checks .scss files for correct spelling. In case of an error, it will output information about the error to the console. <br />
 Using the stylelint plugin. Style lint rules are written in the .stylelintrc.json file.  <br />
 More inforamtion about rules: https://github.com/stylelint/stylelint/blob/main/docs/user-guide/rules/list.md
+
+### npm run lint-js 
+Checks .js files from the src/js folder for correct spelling and fixes errors. <br />
+Using the eslint plugin. Script lint rules are written in the .eslintrc.json file.  <br />
+Command Line docs: https://eslint.org/docs/user-guide/command-line-interface <br />
+Rules docs: https://eslint.org/docs/rules/
