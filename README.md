@@ -20,3 +20,7 @@ Checks .js files from the src/js folder for correct spelling and fixes errors. <
 Using the eslint plugin. Script lint rules are written in the .eslintrc.json file.  <br />
 Command Line docs: https://eslint.org/docs/user-guide/command-line-interface <br />
 Rules docs: https://eslint.org/docs/rules/
+
+### npm run uglify
+Minifies, compresses and improves src/js/script.js <br />
+Using the uglify plugin. Command Line docs: https://github.com/mishoo/UglifyJS#command-line-options

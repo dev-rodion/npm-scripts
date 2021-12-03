@@ -7,7 +7,8 @@
     "scss": "node-sass --output-style compressed -o src/css/ src/scss/",
     "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* ",
     "lint-scss": "stylelint src/scss/*.scss",
-    "lint-js": "eslint --fix src/js/"
+    "lint-js": "eslint --fix src/js/",
+    "uglify": "uglifyjs src/js/script.js -m -o src/js/script.min.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "node-sass": "^6.0.1",
     "postcss": "^8.4.4",
     "postcss-cli": "^9.0.2",
-    "stylelint": "^14.1.0"
+    "stylelint": "^14.1.0",
+    "uglify-js": "^3.14.4"
   }
 }
