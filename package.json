@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "scss": "node-sass --output-style compressed -o src/css/ src/scss/",
-    "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* "
+    "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* ",
+    "lint-scss": "stylelint src/scss/*.scss"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "autoprefixer": "^10.4.0",
     "node-sass": "^6.0.1",
     "postcss": "^8.4.4",
-    "postcss-cli": "^9.0.2"
+    "postcss-cli": "^9.0.2",
+    "stylelint": "^14.1.0"
   }
 }
