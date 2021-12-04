@@ -38,3 +38,9 @@ Runs 'npm run lint-scss', 'npm run scss' and 'npm run autoprefixer' commands.
 
 ### npm run scripts
 Runs 'npm run lint-js' and 'npm run uglify' commands.
+
+### npm run watch:scss
+Calls 'npm run styles' command when changing scss files in app/scss/ folder.
+
+### npm run watch:js
+Calls 'npm run scripts' command when changing js files in app/js/ folder.

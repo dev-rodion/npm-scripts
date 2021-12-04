@@ -11,9 +11,10 @@
     "uglify": "uglifyjs app/js/script.js -m -o app/js/script.min.js",
     "imagemin": "imagemin app/images/* -o dist/images/ && imagemin app/images/jpg/* -o dist/images/jpg/ && imagemin app/images/png/* -o dist/images/png/ && imagemin app/images/svg/* -o dist/images/jpg/",
     "server": "browser-sync start --server 'app' --files 'app/*.html, app/css/*.css, app/js/script.min.js'",
-
     "styles": "npm run lint-scss && npm run scss && npm run autoprefixer",
-    "scripts": "npm run lint-js && npm run uglify"
+    "scripts": "npm run lint-js && npm run uglify",
+    "watch:scss": "onchange \"app/scss/*.scss\" -- npm run styles",
+    "watch:js": "onchange \"app/js/script.js\" -- npm run scripts"
   },
   "repository": {
     "type": "git",
@@ -28,9 +29,10 @@
   "homepage": "https://github.com/dev-rodion/npm-scripts#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
-    "imagemin-cli": "^7.0.0",
     "eslint": "^8.3.0",
+    "imagemin-cli": "^7.0.0",
     "node-sass": "^6.0.1",
+    "onchange": "^7.1.0",
     "postcss": "^8.4.4",
     "postcss-cli": "^9.0.2",
     "stylelint": "^14.1.0",
