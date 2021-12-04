@@ -4,12 +4,13 @@
   "description": "Learning NPM Scripts",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --output-style compressed -o src/css/ src/scss/",
-    "autoprefixer": "postcss -u autoprefixer --no-map -r src/css/* ",
-    "lint-scss": "stylelint src/scss/*.scss",
-    "lint-js": "eslint --fix src/js/",
-    "uglify": "uglifyjs src/js/script.js -m -o src/js/script.min.js",
-    "imagemin": "imagemin src/images/* -o dist/images/ && imagemin src/images/jpg/* -o dist/images/jpg/ && imagemin src/images/png/* -o dist/images/png/ && imagemin src/images/svg/* -o dist/images/jpg/"
+    "scss": "node-sass --output-style compressed -o app/css/ app/scss/",
+    "autoprefixer": "postcss -u autoprefixer --no-map -r app/css/* ",
+    "lint-scss": "stylelint app/scss/*.scss",
+    "lint-js": "eslint --fix app/js/",
+    "uglify": "uglifyjs app/js/script.js -m -o app/js/script.min.js",
+    "imagemin": "imagemin app/images/* -o dist/images/ && imagemin app/images/jpg/* -o dist/images/jpg/ && imagemin app/images/png/* -o dist/images/png/ && imagemin app/images/svg/* -o dist/images/jpg/",
+    "server": "browser-sync start --server 'app' --files 'app/*.html, app/css/*.css, app/js/script.min.js'"
   },
   "repository": {
     "type": "git",
