@@ -32,3 +32,9 @@ Using the imagemin plugin. Command Line docs: https://github.com/imagemin/imagem
 ### npm run server
 Starts a server from the app/ directory, watching app/\*.html, app/css/\*.css and app/js/script.min.js. <br />
 Using the browser-sync plugin. Command Line docs: https://browsersync.io/docs/command-line
+
+### npm run styles
+Runs 'npm run lint-scss', 'npm run scss' and 'npm run autoprefixer' commands.
+
+### npm run scripts
+Runs 'npm run lint-js' and 'npm run uglify' commands.
